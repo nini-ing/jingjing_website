@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AITrust智信----人工智能时代"打假保真"一网通综合治理平台</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1 onclick="showPage('home')" style="cursor: pointer;">AITrust智信</h1>
+                    <span class="subtitle">人工智能时代"打假保真"一网通综合治理平台</span>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#" onclick="showPage('home')" class="nav-link">首页</a></li>
+                        
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle">AI虚假信息治理体系 <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" onclick="showPage('ai-fake-info-government')">政府</a></li>
+                                <li><a href="#" onclick="showPage('ai-fake-info-media')">媒体</a></li>
+                                <li><a href="#" onclick="showPage('ai-fake-info-public')">公众</a></li>
+                                <li><a href="#" onclick="showPage('ai-fake-info-academia')">学界</a></li>
+                                <li><a href="#" onclick="showPage('ai-fake-info-cases')">案例</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle">AI素养智能测评系统 <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" onclick="showPage('ai-literacy-about')">关于系统</a></li>
+                                <li><a href="#" onclick="showPage('ai-literacy-digital')">数字素养智能测评</a></li>
+                                <li><a href="#" onclick="showPage('ai-literacy-ai')">AI素养智能测评</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle">AI版权治理体系 <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" onclick="showPage('ai-copyright-guide')">AI版权问题指南</a></li>
+                                <li><a href="#" onclick="showPage('ai-copyright-cases')">AI版权司法案例库</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li><a href="#contact">联系我们</a></li>
+                    </ul>
+                </nav>
+                <div class="language-switch">
+                    <a href="#" class="active">中文</a>
+                    <a href="#">En</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 面包屑导航 -->
+    <nav class="breadcrumb" id="breadcrumb" style="display: none;">
+        <div class="container">
+            <ul id="breadcrumb-list">
+                <!-- 动态生成面包屑 -->
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 页面内容容器 -->
+    <div id="page-container">
+        <!-- 首页内容 -->
+        <div id="home-page" class="page-content active">
+            <!-- 主横幅轮播图区域 -->
+            <section class="hero-banner" id="home">
+                <div class="carousel-container">
+                    <div class="carousel-slide active">
+                        <div class="slide-background" style="background-image: url('data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'1200\' height=\'600\' viewBox=\'0 0 1200 600\'><defs><linearGradient id=\'grad1\' x1=\'0%\' y1=\'0%\' x2=\'100%\' y2=\'100%\'><stop offset=\'0%\' style=\'stop-color:%234facfe;stop-opacity:1\' /><stop offset=\'100%\' style=\'stop-color:%2300f2fe;stop-opacity:1\' /></linearGradient></defs><rect width=\'1200\' height=\'600\' fill=\'url(%23grad1)\'/><text x=\'600\' y=\'300\' font-family=\'Arial\' font-size=\'48\' fill=\'white\' text-anchor=\'middle\' opacity=\'0.3\'>AI智信平台</text></svg>')"></div>
+                        <div class="slide-content">
+                            <div class="hero-text">
+                                <h1>AITrust智信平台</h1>
+                                <p>人工智能时代"打假保真"一网通综合治理平台</p>
+                                <a href="#" onclick="showPage('ai-fake-info-government')" class="cta-button">了解更多</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-slide">
+                        <div class="slide-background" style="background-image: url('data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'1200\' height=\'600\' viewBox=\'0 0 1200 600\'><defs><linearGradient id=\'grad2\' x1=\'0%\' y1=\'0%\' x2=\'100%\' y2=\'100%\'><stop offset=\'0%\' style=\'stop-color:%23667eea;stop-opacity:1\' /><stop offset=\'100%\' style=\'stop-color:%23764ba2;stop-opacity:1\' /></linearGradient></defs><rect width=\'1200\' height=\'600\' fill=\'url(%23grad2)\'/><text x=\'600\' y=\'300\' font-family=\'Arial\' font-size=\'48\' fill=\'white\' text-anchor=\'middle\' opacity=\'0.3\'>智能检测</text></svg>')"></div>
+                        <div class="slide-content">
+                            <div class="hero-text">
+                                <h1>智能检测技术</h1>
+                                <p>运用先进AI算法，精准识别假冒伪劣产品</p>
+                                <a href="#" onclick="showPage('ai-fake-info-government')" class="cta-button">立即体验</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-slide">
+                        <div class="slide-background" style="background-image: url('data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'1200\' height=\'600\' viewBox=\'0 0 1200 600\'><defs><linearGradient id=\'grad3\' x1=\'0%\' y1=\'0%\' x2=\'100%\' y2=\'100%\'><stop offset=\'0%\' style=\'stop-color:%23ff6b6b;stop-opacity:1\' /><stop offset=\'100%\' style=\'stop-color:%23ffa726;stop-opacity:1\' /></linearGradient></defs><rect width=\'1200\' height=\'600\' fill=\'url(%23grad3)\'/><text x=\'600\' y=\'300\' font-family=\'Arial\' font-size=\'48\' fill=\'white\' text-anchor=\'middle\' opacity=\'0.3\'>一站服务</text></svg>')"></div>
+                        <div class="slide-content">
+                            <div class="hero-text">
+                                <h1>一站式服务</h1>
+                                <p>从检测到处理，提供完整的综合治理解决方案</p>
+                                <a href="#contact" class="cta-button">联系我们</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 导航箭头 -->
+                    <button class="carousel-btn prev-btn" onclick="changeSlide(-1)">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-btn next-btn" onclick="changeSlide(1)">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+
+                    <!-- 指示器 -->
+                    <div class="carousel-indicators">
+                        <span class="indicator active" onclick="currentSlide(1)"></span>
+                        <span class="indicator" onclick="currentSlide(2)"></span>
+                        <span class="indicator" onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 产品展示区域 -->
+            <section class="products-showcase" id="products">
+                <div class="container">
+                    <h2>AI虚假信息治理</h2>
+                    <div class="products-grid">
+                        <div class="product-card" onclick="showPage('ai-fake-info-government')">
+                            <div class="product-image">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <h3>政府</h3>
+                            <p>全球虚假信息治理政策</p>
+                        </div>
+                        <div class="product-card" onclick="showPage('ai-fake-info-media')">
+                            <div class="product-image">
+                                <i class="fas fa-newspaper"></i>
+                            </div>
+                            <h3>媒体</h3>
+                            <p>事实核查资源库</p>
+                        </div>
+                        <div class="product-card" onclick="showPage('ai-fake-info-public')">
+                            <div class="product-image">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>公众</h3>
+                            <p>参与式核查</p>
+                        </div>
+                        <div class="product-card" onclick="showPage('ai-fake-info-academia')">
+                            <div class="product-image">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h3>学界</h3>
+                            <p>前沿研究</p>
+                        </div>
+                        <div class="product-card" onclick="showPage('ai-fake-info-cases')">
+                            <div class="product-image">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h3>案例</h3>
+                            <p>虚假信息治理案例</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AI素养智能测评系统部分 -->
+            <section class="company-intro" id="about">
+                <div class="container">
+                    <div class="intro-content">
+                        <div class="intro-text">
+                            <h2>AI 素养智能测评系统</h2>
+                            <p>结合国际学界中关于AI时代数字素养的研究框架及全民数字素养与技能评价指标体系（科普所），团队最终构建了基于六个维度下（数字科技认知、数字社会认知、基础技能、应用技能、数字观念、数字责任）的AI时代数字素养智能评测系统，以帮助公众完成数字素养测评。</p>
+                            <div class="company-stats">
+                                <div class="stat-item" onclick="showPage('ai-literacy-digital')" style="cursor: pointer;">
+                                    <h3>数字素养测评入口</h3>
+                                </div>
+                                <div class="stat-item" onclick="showPage('ai-literacy-ai')" style="cursor: pointer;">
+                                    <h3>AI素养测评入口</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="intro-image">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AI版权治理部分 -->
+            <section class="news-section" id="news">
+                <div class="container">
+                    <h2>AI 版权治理</h2>
+                    <div class="news-grid">
+                        <article class="news-item" onclick="showPage('ai-copyright-guide')" style="cursor: pointer;">
+                            <div class="news-date">2025-06-28</div>
+                            <h3>AI版权问题指南</h3>
+                            <p>涵盖AI使用、生成、发布、维权全流程版权问题指引，规避使用风险，维护自身权利</p>
+                        </article>
+                        <article class="news-item" onclick="showPage('ai-copyright-cases')" style="cursor: pointer;">
+                            <div class="news-date">2025-06-28</div>
+                            <h3>AI版权司法案例库</h3>
+                            <p>涵盖AI版权相关经典司法案例</p>
+                        </article>
+                        <article class="news-item">
+                            <div class="news-date">2025-06-28</div>
+                            <h3>AI版权经典司法案例一览</h3>
+                            <p>案例1</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+       <!-- AI虚假信息治理 - 政府页面 -->
+<div id="ai-fake-info-government-page" class="page-content">
+    <section class="page-header">
+        <div class="container">
+            <h1>政府 - AI虚假信息治理</h1>
+            <p>为政府部门提供AI虚假信息治理的政策参考和实施指南</p>
+        </div>
+    </section>
+    <section class="content-section">
+        <div class="container">
+            <!-- 代表地区部分 -->
+            <div class="section-title">
+                <h2>代表地区</h2>
+                <p>全球各地区AI虚假信息治理的代表性做法和经验</p>
+            </div>
+            <div class="regions-grid">
+                <div class="region-card" onclick="selectRegion('europe')">
+                    <i class="fas fa-landmark"></i>
+                    <h3>欧洲</h3>
+                    <p>欧盟数字服务法案</p>
+                </div>
+                <div class="region-card" onclick="selectRegion('north-america')">
+                    <i class="fas fa-flag-usa"></i>
+                    <h3>北美洲</h3>
+                    <p>美加协同治理机制</p>
+                </div>
+                <div class="region-card" onclick="selectRegion('asia')">
+                    <i class="fas fa-torii-gate"></i>
+                    <h3>亚洲</h3>
+                    <p>亚太地区合作框架</p>
+                </div>
+                <div class="region-card" onclick="selectRegion('oceania')">
+                    <i class="fas fa-globe-oceania"></i>
+                    <h3>澳洲</h3>
+                    <p>澳新联合治理政策</p>
+                </div>
+                <div class="region-card" onclick="selectRegion('africa')">
+                    <i class="fas fa-globe-africa"></i>
+                    <h3>非洲</h3>
+                    <p>非盟数字化倡议</p>
+                </div>
+                <div class="region-card" onclick="selectRegion('south-america')">
+                    <i class="fas fa-mountain"></i>
+                    <h3>南美洲</h3>
+                    <p>南美共同体政策</p>
+                </div>
+            </div>
+
+            <!-- 政策库部分 -->
+            <div class="section-title">
+                <h2>全球治理政策库</h2>
+                <p>汇集全球AI虚假信息治理相关政策法规</p>
+            </div>
+            <div class="policy-grid">
+                <div class="policy-card" onclick="openPolicyLib('external')">
+                    <i class="fas fa-globe"></i>
+                    <h3>域外政策库</h3>
+                    <p>国际组织和其他国家的AI治理政策法规</p>
+                </div>
+                <div class="policy-card" onclick="openPolicyLib('internal')">
+                    <i class="fas fa-home"></i>
+                    <h3>域内政策库</h3>
+                    <p>国内AI虚假信息治理相关政策法规</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- AI虚假信息治理 - 媒体页面 -->
+<div id="ai-fake-info-media-page" class="page-content">
+    <section class="page-header">
+        <div class="container">
+            <h1>媒体 - AI虚假信息治理</h1>
+            <p>为媒体机构提供事实核查资源和工具</p>
+        </div>
+    </section>
+    <section class="content-section">
+        <div class="container">
+            <!-- 媒体机构展示部分 -->
+            <div class="section-title">
+                <h2>媒体资源</h2>
+                <p>权威媒体和事实核查机构</p>
+            </div>
+            
+            <!-- 媒体logo网格 -->
+            <div class="media-grid">
+                <!-- 国际媒体 -->
+                <div class="media-category">
+                    <h3>国际媒体</h3>
+                    <div class="media-logos">
+                        <div class="media-item" onclick="openMediaLink('https://factcheck.afp.com ', 'FactCheck.org')">
+                            <div class="media-logo">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <h4>FactCheck.org</h4>
+                            <p>新社运营的国际多语种事实核查平台</p>
+                        </div>
+                        
+                        <div class="media-item" onclick="openMediaLink('https://www.snopes.com', 'Snopes')">
+                            <div class="media-logo">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <h4>Snopes</h4>
+                            <p>美国最早的权威事实核查网站</p>
+                        </div>
+                        
+                        <div class="media-item" onclick="openMediaLink('https://www.washingtonpost.com/politics/fact-checker/', 'PolitiFact')">
+                            <div class="media-logo">
+                                <i class="fas fa-gavel"></i>
+                            </div>
+                            <h4>PolitiFact</h4>
+                            <p>Fact Checker专注核查政治言论</p>
+                        </div>
+                        
+                        <div class="media-item" onclick="openMediaLink('https://storyful.com ', 'Reuters')">
+                            <div class="media-logo">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <h4>Reuters</h4>
+                            <p>Storyful 结合人工与AI技术</p>
+                        </div>
+                        
+                        <div class="media-item" onclick="openMediaLink('https://www.politifact.com', 'BBC Reality Check')">
+                            <div class="media-logo">
+                                <i class="fas fa-tv"></i>
+                            </div>
+                            <h4>BBC Reality Check</h4>
+                            <p>PolitiFact专注于政治言论核查</p>
+                        </div>
+                        
+                        <div class="media-item" onclick="openMediaLink('https://www.piyao.org.cn', 'AFP Fact Check')">
+                            <div class="media-logo">
+                                <i class="fas fa-newspaper"></i>
+                            </div>
+                            <h4>AFP Fact Check</h4>
+                            <p>中国互联网联合辟谣平台</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 国内媒体 -->
+                <div class="media-category">
+                    <h3>国内媒体</h3>
+                    <div class="media-logos">
+                        <div class="media-item" onclick="openMediaLink('https://www.factpaper.cn/large', '新华网')">
+                            <div class="media-logo">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>明查</h4>
+                            <p>澎湃新闻推出的事实核查栏目</p>
+                        </div>
+                        
+                        <div class="media-item" onclick="openMediaLink('https://chinafactcheck.com/', '人民网')">
+                            <div class="media-logo">
+                                <i class="fas fa-flag"></i>
+                            </div>
+                            <h4>有据</h4>
+                            <p>国内首个独立事实核查计划</p>
+                        </div>
+                        
+                        <div class="media-item" onclick="openMediaLink('https://www.cctv.com', '央视网')">
+                            <div class="media-logo">
+                                <i class="fas fa-video"></i>
+                            </div>
+                            <h4>央视网</h4>
+                            <p>中央电视台官方网站</p>
+                        </div>
+                        
+                        <div class="media-item" onclick="openMediaLink('http://www.chinanews.com', '中新网')">
+                            <div class="media-logo">
+                                <i class="fas fa-info-circle"></i>
+                            </div>
+                            <h4>中新网</h4>
+                            <p>中国新闻社官网</p>
+                        </div>
+                        
+                        <div class="media-item" onclick="openMediaLink('https://www.thepaper.cn', '澎湃新闻')">
+                            <div class="media-logo">
+                                <i class="fas fa-wave-square"></i>
+                            </div>
+                            <h4>澎湃新闻</h4>
+                            <p>专业新闻资讯平台</p>
+                        </div>
+                        
+                        <div class="media-item" onclick="openMediaLink('https://www.caixin.com', '财新网')">
+                            <div class="media-logo">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4>财新网</h4>
+                            <p>财经新闻专业平台</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 学术机构 -->
+                <div class="media-category">
+                    <h3>学术研究机构</h3>
+                    <div class="media-logos">
+                        <div class="media-item" onclick="openMediaLink('https://firstdraftnews.org', 'First Draft')">
+                            <div class="media-logo">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h4>First Draft</h4>
+                            <p>虚假信息研究先锋</p>
+                        </div>
+                        
+                        <div class="media-item" onclick="openMediaLink('https://www.poynter.org', 'Poynter Institute')">
+                            <div class="media-logo">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <h4>Poynter Institute</h4>
+                            <p>新闻教育研究机构</p>
+                        </div>
+                        
+                        <div class="media-item" onclick="openMediaLink('#', '清华大学新闻学院')">
+                            <div class="media-logo">
+                                <i class="fas fa-school"></i>
+                            </div>
+                            <h4>清华大学新闻学院</h4>
+                            <p>AI新闻伦理研究中心</p>
+                        </div>
+                        
+                        <div class="media-item" onclick="openMediaLink('#', '复旦大学新闻学院')">
+                            <div class="media-logo">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <h4>复旦大学新闻学院</h4>
+                            <p>媒体融合研究院</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 资源工具部分 -->
+            <div class="section-title">
+                <h2>媒体工具与资源</h2>
+                <p>为媒体从业者提供的专业工具和资源</p>
+            </div>
+            
+            <div class="tools-grid">
+                <div class="tool-card" onclick="openToolPage('fact-check-guide')">
+                    <i class="fas fa-book-open"></i>
+                    <h3>事实核查指南</h3>
+                    <p>专业的事实核查方法论和最佳实践</p>
+                </div>
+                
+                <div class="tool-card" onclick="openToolPage('ai-detection-tools')">
+                    <i class="fas fa-robot"></i>
+                    <h3>AI检测工具</h3>
+                    <p>识别AI生成内容的专业工具集</p>
+                </div>
+                
+                <div class="tool-card" onclick="openToolPage('media-ethics')">
+                    <i class="fas fa-balance-scale"></i>
+                    <h3>媒体伦理准则</h3>
+                    <p>AI时代的新闻伦理和行业标准</p>
+                </div>
+                
+                <div class="tool-card" onclick="openToolPage('training-resources')">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h3>培训资源</h3>
+                    <p>媒体从业者技能提升培训材料</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+        <!-- AI虚假信息治理 - 公众页面 -->
+        <div id="ai-fake-info-public-page" class="page-content">
+            <section class="page-header">
+                <div class="container">
+                    <h1>公众 - AI虚假信息治理</h1>
+                    <p>为公众提供AI虚假信息识别和应对工具</p>
+                </div>
+            </section>
+            <section class="content-section">
+                <div class="container">
+                    <div class="sub-nav-grid">
+                        <div class="sub-nav-card" onclick="showPage('ai-content-guide')">
+                            <i class="fas fa-search"></i>
+                            <h3>AI生成内容识别指南</h3>
+                            <p>帮助公众识别AI生成的虚假内容</p>
+                        </div>
+                        <div class="sub-nav-card" onclick="showPage('credibility-framework')">
+                            <i class="fas fa-check-circle"></i>
+                            <h3>信息可信度评估框架</h3>
+                            <p>提供科学的信息可信度评估方法</p>
+                        </div>
+                        <div class="sub-nav-card" onclick="showPage('public-verification')">
+                            <i class="fas fa-users-cog"></i>
+                            <h3>公众参与式核查指南</h3>
+                            <p>指导公众参与信息核查的方法和流程</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- 三级页面示例 - 代表地区 -->
+        <div id="representative-regions-page" class="page-content">
+            <section class="page-header">
+                <div class="container">
+                    <h1>代表地区</h1>
+                    <p>全球各地区AI虚假信息治理的代表性做法和经验</p>
+                </div>
+            </section>
+            <section class="content-section">
+                <div class="container">
+                    <div class="content-grid">
+                        <div class="region-card">
+                            <h3>欧盟</h3>
+                            <p>《数字服务法》(DSA) 要求大型在线平台采取措施打击虚假信息...</p>
+                        </div>
+                        <div class="region-card">
+                            <h3>美国</h3>
+                            <p>通过多部门协作机制应对AI虚假信息挑战...</p>
+                        </div>
+                        <div class="region-card">
+                            <h3>中国</h3>
+                            <p>《互联网信息服务深度合成规定》等法规规范AI生成内容...</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+<!-- 欧洲地区的三级页面 -->
+<div id="europe-region-page" class="page-content">
+    <section class="page-header">
+        <div class="container">
+            <h1>欧洲地区AI虚假信息治理</h1>
+            <p>欧盟及欧洲国家的AI虚假信息治理政策与实践</p>
+        </div>
+    </section>
+    <section class="content-section">
+        <div class="container">
+            <div class="document-viewer">
+                <div class="document-header">
+                    <h2>欧盟数字服务法案 (Digital Services Act)</h2>
+                    <p class="document-meta">发布时间: 2022年10月 | 实施时间: 2023年2月</p>
+                    <div class="document-actions">
+                        <button class="action-btn download-btn" onclick="downloadPDF('europe')">
+                            <i class="fas fa-download"></i> 下载文档
+                        </button>
+                        <button class="action-btn fullscreen-btn" onclick="toggleFullscreen('europe-pdf-viewer')">
+                            <i class="fas fa-expand"></i> 全屏查看
+                        </button>
+                    </div>
+                </div>
+                <div class="pdf-container" id="europe-pdf-viewer">
+                    <!-- PDF嵌入 -->
+                    <iframe src="docs/europe_dsa_policy.pdf" width="100%" height="600px" frameborder="0"></iframe>
+                </div>
+            </div>
+            
+            <!-- 可选的简短摘要或关键点 -->
+            <div class="document-summary">
+                <h3>政策要点</h3>
+                <ul>
+                    <li>要求大型在线平台识别、分析和评估与AI生成内容相关的系统性风险</li>
+                    <li>平台必须采取合理、有效的风险缓解措施</li>
+                    <li>对于已知的虚假内容，平台应建立快速响应机制</li>
+                </ul>
+                <p><a href="#" onclick="showRelatedCases('europe')">查看相关案例 <i class="fas fa-arrow-right"></i></a></p>
+            </div>
+        </div>
+    </section>
+</div>
+            
+        
+
+<!-- 北美洲地区的三级页面 -->
+<div id="north-america-region-page" class="page-content">
+    <section class="page-header">
+        <div class="container">
+            <h1>北美洲地区AI虚假信息治理</h1>
+            <p>美国和加拿大的AI虚假信息治理政策与实践</p>
+        </div>
+    </section>
+    <section class="content-section">
+        <div class="container">
+            <div class="document-viewer">
+                <div class="document-header">
+                    <h2>美国AI虚假信息治理框架</h2>
+                    <p class="document-meta">发布时间: 2023年10月 | 最后更新: 2025年2月</p>
+                    <div class="document-actions">
+                        <button class="action-btn download-btn" onclick="downloadPDF('north-america')">
+                            <i class="fas fa-download"></i> 下载文档
+                        </button>
+                        <button class="action-btn fullscreen-btn" onclick="toggleFullscreen('north-america-pdf-viewer')">
+                            <i class="fas fa-expand"></i> 全屏查看
+                        </button>
+                    </div>
+                </div>
+                <div class="pdf-container" id="north-america-pdf-viewer">
+                    <!-- PDF嵌入 -->
+                    <iframe src="docs/north_america_policy.pdf" width="100%" height="600px" frameborder="0"></iframe>
+                </div>
+            </div>
+            
+            <!-- 简短摘要或关键点 -->
+            <div class="document-summary">
+                <h3>政策要点</h3>
+                <ul>
+                    <li>美国采用多部门协同治理模式，由联邦贸易委员会、国土安全部和司法部共同监管</li>
+                    <li>《AI权利法案蓝图》对可能产生虚假信息的AI系统提出了透明度要求</li>
+                    <li>加拿大发布《人工智能与数据法案》，建立了跨国界协作机制</li>
+                </ul>
+                <p><a href="#" onclick="showRelatedCases('north-america')">查看相关案例 <i class="fas fa-arrow-right"></i></a></p>
+            </div>    
+            </div>
+            
+            <!-- 相关案例 -->
+            <div id="north-america-cases" class="related-cases" style="display: none;">
+                <h3>相关案例</h3>
+                <div class="case-card">
+                    <h4>Meta与美国FTC虚假信息治理合作案</h4>
+                    <p>2024年1月，Meta(Facebook母公司)与美国联邦贸易委员会(FTC)签署了一项协议，针对AI生成内容制定更严格的标记要求，并投入5亿美元用于研发识别AI虚假信息的技术。</p>
+                </div>
+                <div class="case-card">
+                    <h4>加拿大媒体联盟AI真实性倡议</h4>
+                    <p>2023年11月，加拿大主要媒体组成联盟，共同推出"AI内容透明度倡议"，承诺标记所有AI生成内容，并建立独立的事实核查机制。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- 亚洲地区的三级页面 -->
+<div id="asia-region-page" class="page-content">
+    <section class="page-header">
+        <div class="container">
+            <h1>亚洲地区AI虚假信息治理</h1>
+            <p>亚洲主要国家的AI虚假信息治理政策与实践</p>
+        </div>
+    </section>
+    <section class="content-section">
+        <div class="container">
+            <div class="document-viewer">
+                <div class="document-header">
+                    <h2>亚洲AI虚假信息治理框架</h2>
+                    <p class="document-meta">发布时间: 2024年3月 | 最后更新: 2025年1月</p>
+                    <div class="document-actions">
+                        <button class="action-btn download-btn" onclick="downloadPDF('asia')">
+                            <i class="fas fa-download"></i> 下载文档
+                        </button>
+                        <button class="action-btn fullscreen-btn" onclick="toggleFullscreen('asia-pdf-viewer')">
+                            <i class="fas fa-expand"></i> 全屏查看
+                        </button>
+                    </div>
+                </div>
+                <div class="pdf-container" id="asia-pdf-viewer">
+                    <!-- PDF嵌入 -->
+                    <iframe src="docs/asia_policy.pdf" width="100%" height="600px" frameborder="0" onerror="handlePDFError('asia')"></iframe>
+                    
+                    <!-- 错误信息区域 -->
+                    <div id="asia-pdf-error" style="display:none; padding: 20px; text-align: center;">
+                        <p>PDF文档加载失败。您可以：</p>
+                        <button class="action-btn download-btn" onclick="downloadPDF('asia')">
+                            <i class="fas fa-download"></i> 直接下载文档
+                        </button>
+                        <p>或</p>
+                        <button class="action-btn" onclick="loadGoogleViewer('asia')">
+                            <i class="fas fa-eye"></i> 使用Google查看器打开
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 简短摘要或关键点 -->
+            <div class="document-summary">
+                <h3>政策要点</h3>
+                <ul>
+                    <li>中国《深度合成管理规定》与《网络信息内容生态治理规定》形成完整监管框架</li>
+                    <li>日本采用"多方协同治理"模式，由政府、企业和学术界共同参与</li>
+                    <li>韩国《人工智能伦理准则》对AI系统的透明度和可解释性提出明确要求</li>
+                    <li>新加坡推出"AI验证计划"，对AI系统进行独立认证</li>
+                </ul>
+                <p><a href="#" onclick="showRelatedCases('asia')">查看相关案例 <i class="fas fa-arrow-right"></i></a></p>
+            </div>
+            
+            <!-- 相关案例 -->
+            <div id="asia-cases" class="related-cases" style="display: none;">
+                <h3>相关案例</h3>
+                <div class="case-card">
+                    <h4>中国"清朗"行动专项整治</h4>
+                    <p>2024年2月，国家网信办启动"清朗"专项行动，重点整治生成式AI生产传播的虚假信息，共处置违法违规账号3万余个，取得显著成效。</p>
+                </div>
+                <div class="case-card">
+                    <h4>日本媒体联盟AI内容标识机制</h4>
+                    <p>2023年12月，日本主要媒体机构联合建立AI生成内容识别和标记机制，并在新闻APP中集成AI内容检测工具，提高公众鉴别能力。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- 澳洲地区的三级页面 -->
+<div id="oceania-region-page" class="page-content">
+    <section class="page-header">
+        <div class="container">
+            <h1>澳洲地区AI虚假信息治理</h1>
+            <p>澳大利亚和新西兰的AI虚假信息治理政策与实践</p>
+        </div>
+    </section>
+    <section class="content-section">
+        <div class="container">
+            <div class="document-viewer">
+                <div class="document-header">
+                    <h2>澳洲AI虚假信息治理框架</h2>
+                    <p class="document-meta">发布时间: 2024年2月 | 最后更新: 2025年1月</p>
+                    <div class="document-actions">
+                        <button class="action-btn download-btn" onclick="downloadPDF('oceania')">
+                            <i class="fas fa-download"></i> 下载文档
+                        </button>
+                        <button class="action-btn fullscreen-btn" onclick="toggleFullscreen('oceania-pdf-viewer')">
+                            <i class="fas fa-expand"></i> 全屏查看
+                        </button>
+                    </div>
+                </div>
+                <div class="pdf-container" id="oceania-pdf-viewer">
+                    <!-- PDF嵌入 -->
+                    <iframe src="docs/oceania_policy.pdf" width="100%" height="600px" frameborder="0" onerror="handlePDFError('oceania')"></iframe>
+                    
+                    <!-- 错误信息区域 -->
+                    <div id="oceania-pdf-error" style="display:none; padding: 20px; text-align: center;">
+                        <p>PDF文档加载失败。您可以：</p>
+                        <button class="action-btn download-btn" onclick="downloadPDF('oceania')">
+                            <i class="fas fa-download"></i> 直接下载文档
+                        </button>
+                        <p>或</p>
+                        <button class="action-btn" onclick="loadGoogleViewer('oceania')">
+                            <i class="fas fa-eye"></i> 使用Google查看器打开
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 简短摘要或关键点 -->
+            <div class="document-summary">
+                <h3>政策要点</h3>
+                <ul>
+                    <li>澳大利亚《在线安全法案》扩展了数字平台对AI生成虚假内容的责任范围</li>
+                    <li>澳大利亚电信管理局建立了AI内容监测系统，实时跟踪和分析虚假信息传播</li>
+                    <li>新西兰《有害数字通信法》修正案增加了对AI深度伪造内容的特别条款</li>
+                    <li>澳新两国建立了区域性AI治理协作机制，共享信息和资源</li>
+                </ul>
+                <p><a href="#" onclick="showRelatedCases('oceania')">查看相关案例 <i class="fas fa-arrow-right"></i></a></p>
+            </div>
+            
+            <!-- 相关案例 -->
+            <div id="oceania-cases" class="related-cases" style="display: none;">
+                <h3>相关案例</h3>
+                <div class="case-card">
+                    <h4>澳大利亚电子安全专员办公室的AI内容监管计划</h4>
+                    <p>2024年1月，澳大利亚电子安全专员办公室启动了专项AI内容监管计划，要求所有运营商在算法推荐中优先推广经过事实核查的内容，降低未经验证信息的曝光率。</p>
+                </div>
+                <div class="case-card">
+                    <h4>新西兰数字安全联盟</h4>
+                    <p>2023年9月，新西兰成立了由政府、科技公司、媒体和民间组织组成的"数字安全联盟"，共同应对AI虚假信息挑战，重点关注选举和公共卫生等关键领域。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- 非洲地区的三级页面 -->
+<div id="africa-region-page" class="page-content">
+    <section class="page-header">
+        <div class="container">
+            <h1>非洲地区AI虚假信息治理</h1>
+            <p>非洲主要国家和地区组织的AI虚假信息治理政策与实践</p>
+        </div>
+    </section>
+    <section class="content-section">
+        <div class="container">
+            <div class="document-viewer">
+                <div class="document-header">
+                    <h2>非洲AI虚假信息治理框架</h2>
+                    <p class="document-meta">发布时间: 2024年4月 | 最后更新: 2025年1月</p>
+                    <div class="document-actions">
+                        <button class="action-btn download-btn" onclick="downloadPDF('africa')">
+                            <i class="fas fa-download"></i> 下载文档
+                        </button>
+                        <button class="action-btn fullscreen-btn" onclick="toggleFullscreen('africa-pdf-viewer')">
+                            <i class="fas fa-expand"></i> 全屏查看
+                        </button>
+                    </div>
+                </div>
+                <div class="pdf-container" id="africa-pdf-viewer">
+                    <!-- PDF嵌入 -->
+                    <iframe src="docs/africa_policy.pdf" width="100%" height="600px" frameborder="0" onerror="handlePDFError('africa')"></iframe>
+                    
+                    <!-- 错误信息区域 -->
+                    <div id="africa-pdf-error" style="display:none; padding: 20px; text-align: center;">
+                        <p>PDF文档加载失败。您可以：</p>
+                        <button class="action-btn download-btn" onclick="downloadPDF('africa')">
+                            <i class="fas fa-download"></i> 直接下载文档
+                        </button>
+                        <p>或</p>
+                        <button class="action-btn" onclick="loadGoogleViewer('africa')">
+                            <i class="fas fa-eye"></i> 使用Google查看器打开
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 简短摘要或关键点 -->
+            <div class="document-summary">
+                <h3>政策要点</h3>
+                <ul>
+                    <li>非洲联盟《数字转型战略》首次将AI虚假信息治理纳入重点议题</li>
+                    <li>南非《网络犯罪法》对传播AI生成虚假信息的行为制定严格处罚条款</li>
+                    <li>肯尼亚建立了首个非洲AI伦理委员会，负责制定内容真实性标准</li>
+                    <li>尼日利亚《数字权利与自由法案》平衡言论自由与打击虚假信息</li>
+                </ul>
+                <p><a href="#" onclick="showRelatedCases('africa')">查看相关案例 <i class="fas fa-arrow-right"></i></a></p>
+            </div>
+            
+            <!-- 相关案例 -->
+            <div id="africa-cases" class="related-cases" style="display: none;">
+                <h3>相关案例</h3>
+                <div class="case-card">
+                    <h4>非洲事实核查网络的AI识别工具开发</h4>
+                    <p>2024年3月，非洲事实核查网络(AFCN)开发了专门针对当地语言的AI内容识别工具，已在15个非洲国家部署，支持斯瓦希里语、豪萨语等多种本地语言。</p>
+                </div>
+                <div class="case-card">
+                    <h4>南非选举委员会AI虚假信息监测系统</h4>
+                    <p>2023年11月，南非选举委员会启用AI虚假信息监测系统，为2024年大选提供保障，成功识别和移除了超过5000条AI生成的虚假选举信息。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- 南美洲地区的三级页面 -->
+<div id="south-america-region-page" class="page-content">
+    <section class="page-header">
+        <div class="container">
+            <h1>南美洲地区AI虚假信息治理</h1>
+            <p>南美洲主要国家的AI虚假信息治理政策与实践</p>
+        </div>
+    </section>
+    <section class="content-section">
+        <div class="container">
+            <div class="document-viewer">
+                <div class="document-header">
+                    <h2>南美洲AI虚假信息治理框架</h2>
+                    <p class="document-meta">发布时间: 2024年3月 | 最后更新: 2025年1月</p>
+                    <div class="document-actions">
+                        <button class="action-btn download-btn" onclick="downloadPDF('south-america')">
+                            <i class="fas fa-download"></i> 下载文档
+                        </button>
+                        <button class="action-btn fullscreen-btn" onclick="toggleFullscreen('south-america-pdf-viewer')">
+                            <i class="fas fa-expand"></i> 全屏查看
+                        </button>
+                    </div>
+                </div>
+                <div class="pdf-container" id="south-america-pdf-viewer">
+                    <!-- PDF嵌入 -->
+                    <iframe src="docs/south_america_policy.pdf" width="100%" height="600px" frameborder="0" onerror="handlePDFError('south-america')"></iframe>
+                    
+                    <!-- 错误信息区域 -->
+                    <div id="south-america-pdf-error" style="display:none; padding: 20px; text-align: center;">
+                        <p>PDF文档加载失败。您可以：</p>
+                        <button class="action-btn download-btn" onclick="downloadPDF('south-america')">
+                            <i class="fas fa-download"></i> 直接下载文档
+                        </button>
+                        <p>或</p>
+                        <button class="action-btn" onclick="loadGoogleViewer('south-america')">
+                            <i class="fas fa-eye"></i> 使用Google查看器打开
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 简短摘要或关键点 -->
+            <div class="document-summary">
+                <h3>政策要点</h3>
+                <ul>
+                    <li>巴西《互联网权利法案》修正案专门针对AI生成虚假信息制定了责任认定标准</li>
+                    <li>阿根廷《数字媒体责任法》要求平台开发AI内容识别技术</li>
+                    <li>智利成立了"数字真实性中心"，建立跨国界虚假信息监测网络</li>
+                    <li>哥伦比亚《数字环境伦理法》强调平台和用户的共同责任</li>
+                </ul>
+                <p><a href="#" onclick="showRelatedCases('south-america')">查看相关案例 <i class="fas fa-arrow-right"></i></a></p>
+            </div>
+            
+            <!-- 相关案例 -->
+            <div id="south-america-cases" class="related-cases" style="display: none;">
+                <h3>相关案例</h3>
+                <div class="case-card">
+                    <h4>巴西最高选举法院的AI监管行动</h4>
+                    <p>2024年2月，巴西最高选举法院颁布决议，要求所有社交媒体平台在24小时内标记或移除已确认的AI生成虚假选举信息，违者每条信息罚款5万雷亚尔。</p>
+                </div>
+                <div class="case-card">
+                    <h4>拉美事实核查联盟</h4>
+                    <p>2023年10月，由阿根廷、巴西、智利等九国主要媒体组成的"拉美事实核查联盟"成立，共享AI检测技术资源，协同应对跨国界传播的虚假信息。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+        <!-- 更多页面内容需要继续添加... -->
+
+       
+<!-- 域外政策库三级页面 -->
+<div id="foreign-policy-library" class="page-content" style="display: none;">
+    <section class="page-header">
+        <div class="container">
+            <!-- 面包屑导航 -->
+            <nav class="breadcrumb">
+                <a href="#" onclick="goToGovernment()">政府页面</a>
+                <span class="separator">></span>
+                <span class="current">域外政策库</span>
+            </nav>
+            
+            <h1>域外政策库</h1>
+            <p>国际组织和其他国家的AI治理政策法规</p>
+        </div>
+    </section>
+    <section class="content-section">
+        <div class="container">
+            <div class="document-viewer">
+                <div class="document-header">
+                    <h2>域外政策库</h2>
+                    <p class="document-meta">发布时间: 2023年10月 | 最后更新: 2025年2月</p>
+                    <div class="document-actions">
+                        <button class="action-btn download-btn" onclick="downloadPDF('foreign-policy')">
+                            <i class="fas fa-download"></i> 下载文档
+                        </button>
+                        <button class="action-btn fullscreen-btn" onclick="toggleFullscreen('foreign-policy-pdf-viewer')">
+                            <i class="fas fa-expand"></i> 全屏查看
+                        </button>
+                    </div>
+                </div>
+                <div class="pdf-container" id="foreign-policy-pdf-viewer">
+                    <!-- PDF嵌入 -->
+                    <iframe src="docs/foreign-policy_policy.pdf" width="100%" height="600px" frameborder="0"></iframe>
+                </div>
+            </div>
+            
+            <!-- 简短摘要或关键点 -->
+            <div class="document-summary">
+                <h3>政策要点</h3>
+                <ul>
+                    <li>美国采用多部门协同治理模式，由联邦贸易委员会、国土安全部和司法部共同监管</li>
+                    <li>《AI权利法案蓝图》对可能产生虚假信息的AI系统提出了透明度要求</li>
+                    <li>加拿大发布《人工智能与数据法案》，建立了跨国界协作机制</li>
+                </ul>
+                <p><a href="#" onclick="showRelatedCases('foreign-policy')">查看相关案例 <i class="fas fa-arrow-right"></i></a></p>
+            </div>
+            
+            <!-- 相关案例 -->
+            <div id="foreign-policy-cases" class="related-cases" style="display: none;">
+                <h3>相关案例</h3>
+                <div class="case-card">
+                    <h4>Meta与美国FTC虚假信息治理合作案</h4>
+                    <p>2024年1月，Meta(Facebook母公司)与美国联邦贸易委员会(FTC)签署了一项协议，针对AI生成内容制定更严格的标记要求，并投入5亿美元用于研发识别AI虚假信息的技术。</p>
+                </div>
+                <div class="case-card">
+                    <h4>加拿大媒体联盟AI真实性倡议</h4>
+                    <p>2023年11月，加拿大主要媒体组成联盟，共同推出"AI内容透明度倡议"，承诺标记所有AI生成内容，并建立独立的事实核查机制。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- 域内政策库三级页面 -->
+<div id="internal-policy-library" class="page-content" style="display: none;">
+    <section class="page-header">
+        <div class="container">
+            <!-- 面包屑导航 -->
+            <nav class="breadcrumb">
+                <a href="#" onclick="goToGovernment()">政府页面</a>
+                <span class="separator">></span>
+                <span class="current">域内政策库</span>
+            </nav>
+            
+            <h1>域内政策库</h1>
+            <p>国内AI虚假信息治理相关政策法规</p>
+        </div>
+    </section>
+    <section class="content-section">
+        <div class="container">
+            <div class="document-viewer">
+                <div class="document-header">
+                    <h2>域内政策库</h2>
+                    <p class="document-meta">发布时间: 2023年10月 | 最后更新: 2025年2月</p>
+                    <div class="document-actions">
+                        <button class="action-btn download-btn" onclick="downloadPDF('internal-policy')">
+                            <i class="fas fa-download"></i> 下载文档
+                        </button>
+                        <button class="action-btn fullscreen-btn" onclick="toggleFullscreen('internal-policy-pdf-viewer')">
+                            <i class="fas fa-expand"></i> 全屏查看
+                        </button>
+                    </div>
+                </div>
+                <div class="pdf-container" id="internal-policy-pdf-viewer">
+                    <!-- PDF嵌入 -->
+                    <iframe src="docs/internal-policy_policy.pdf" width="100%" height="600px" frameborder="0"></iframe>
+                </div>
+            </div>
+            
+            <!-- 简短摘要或关键点 -->
+            <div class="document-summary">
+                <h3>政策要点</h3>
+                <ul>
+                    <li>《互联网信息服务深度合成规定》规范AI生成内容的标识和管理要求</li>
+                    <li>《网络信息内容生态治理规定》建立了虚假信息识别和处置机制</li>
+                    <li>《算法推荐管理规定》对推荐算法的透明度和可解释性提出要求</li>
+                    <li>国家网信办发布的《生成式人工智能服务管理暂行办法》</li>
+                </ul>
+                <p><a href="#" onclick="showRelatedCases('internal-policy')">查看相关案例 <i class="fas fa-arrow-right"></i></a></p>
+            </div>
+            
+            <!-- 相关案例 -->
+            <div id="internal-policy-cases" class="related-cases" style="display: none;">
+                <h3>相关案例</h3>
+                <div class="case-card">
+                    <h4>国家网信办"清朗"专项行动</h4>
+                    <p>2024年2月，国家网信办启动"清朗"专项行动，重点整治生成式AI生产传播的虚假信息，共处置违法违规账号3万余个，关闭违规网站1200余个。</p>
+                </div>
+                <div class="case-card">
+                    <h4>工信部AI算法备案管理</h4>
+                    <p>2023年12月，工信部发布AI算法备案管理办法，要求具有舆论属性或社会动员能力的算法推荐服务提供者履行备案手续，加强内容安全管理。</p>
+                </div>
+                <div class="case-card">
+                    <h4>最高法AI生成内容司法解释</h4>
+                    <p>2024年1月，最高人民法院发布关于AI生成内容的司法解释，明确了AI生成虚假信息的法律责任认定标准和处罚依据。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+    <!-- 底部 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>核心功能</h4>
+                    <ul>
+                        <li><a href="#" onclick="showPage('ai-fake-info-government')">虚假信息治理</a></li>
+                        <li><a href="#" onclick="showPage('ai-literacy-about')">素养测评</a></li>
+                        <li><a href="#" onclick="showPage('ai-copyright-guide')">版权治理</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>服务对象</h4>
+                    <ul>
+                        <li><a href="#" onclick="showPage('ai-fake-info-government')">政府机构</a></li>
+                        <li><a href="#" onclick="showPage('ai-fake-info-media')">媒体组织</a></li>
+                        <li><a href="#" onclick="showPage('ai-fake-info-public')">公众用户</a></li>
+                        <li><a href="#" onclick="showPage('ai-fake-info-academia')">学术研究</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>联系我们</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> contact@aitrust.com</p>
+                        <p><i class="fas fa-globe"></i> 构建可信AI生态</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AITrust智信平台. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
