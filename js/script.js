@@ -579,3 +579,19 @@ function openToolPage(toolType) {
     // 如果将来有具体的工具页面，可以这样跳转：
     // showPage(`media-tool-${toolType}`);
 }
+// 响应式图片切换
+function updateBackgroundImages() {
+    const slides = document.querySelectorAll('.slide-background');
+    const isMobile = window.innerWidth <= 768;
+    
+    slides.forEach(slide => {
+        const desktopImg = slide.getAttribute('data-desktop');
+        const mobileImg = slide.getAttribute('data-mobile');
+        const imgSrc = isMobile ? mobileImg : desktopImg;
+        slide.style.backgroundImage = `url('${imgSrc}')`;
+    });
+}
+
+// 页面加载和窗口大小改变时调用
+window.addEventListener('load', updateBackgroundImages);
+window.addEventListener('resize', updateBackgroundImages);
